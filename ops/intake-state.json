@@ -58,7 +58,18 @@
   "carried": 0,
   "resolvedOrDropped": 0
  },
- "escalations": [],
+ "escalations": [
+  {
+   "id": "QUEUE-20261012-01",
+   "repo": "roshpinacare-sys",
+   "kind": "owner-decision"
+  },
+  {
+   "id": "QUEUE-20261012-02",
+   "repo": "Domain",
+   "kind": "dead-feed"
+  }
+ ],
  "apiCalls": 621,
  "apiQuota": {
   "limit": 5000,
@@ -1641,5 +1652,6 @@
    "cron": null,
    "all": []
   }
- }
+ },
+ "verified": true
 }
