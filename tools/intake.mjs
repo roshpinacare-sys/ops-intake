@@ -248,7 +248,11 @@ for (const s of PAGES_SITES) {
     apiCalls++;
     const r = await fetch(s.url, { headers: { 'User-Agent': 'ops-intake-v1' }, redirect: 'follow' });
     const html = r.ok ? (await r.text()).slice(0, 200000) : '';
-    const hasVersion = /version|v\d+\.\d+|build\s*#?\s*\d+|מספר-גרסה|גרסה\s*\d/i.test(html);
+    // T32 version-detection fix: labels may wrap values in spans (e.g. `build: <span>2026-10-11</span>`)
+    // — measure the TEXT, not the markup; and accept colon/dash-separated stamps
+    // (`build: 2026-10-11`, `גרסה: v0.2.1`) while still requiring a digit (no "build and deployment" false positive).
+    const pageText = html.replace(/<[^>]{0,200}>/g, ' ');
+    const hasVersion = /version|v\d+\.\d+|build[\s:#_-]*\d|מספר-גרסה|גרסה[\s:#_-]*\d/i.test(pageText);
     sites.push({ ...s, http: r.status, ok: r.ok, hasVersion });
   } catch (e) { sites.push({ ...s, http: 0, ok: false, hasVersion: false, error: String(e.message).slice(0, 60) }); }
   await sleep(30);
@@ -472,7 +476,17 @@ for (const o of orders) {
   const key = keyOf(o);
   const prev = prevByKey.get(key);
   if (prev) {
-    merged.push({ ...o, id: prev.id, firstSeen: prev.firstSeen, lastSeen: NOW, status: 'OPEN', isNew: false });
+    // receipt-first law (T32): a CLOSED order is never resurrected by re-detection.
+    // The closure receipt stands until explicitly voided by the owner; if the condition
+    // re-measures true, the closure is carried with reDetectedAt so a lane fixes the
+    // condition (or the owner voids the receipt) — the queue never tramples a closure.
+    const wasClosed = String(prev.status || '').toUpperCase() === 'CLOSED';
+    merged.push(wasClosed
+      ? { ...o, id: prev.id, firstSeen: prev.firstSeen, lastSeen: NOW, status: 'CLOSED', isNew: false,
+          closedVia: prev.closedVia || 'receipt-first', closedAt: prev.closedAt || NOW,
+          ...(prev.closureReceipt ? { closureReceipt: prev.closureReceipt } : {}),
+          reDetectedAt: NOW, reopenBlock: 'receipt-first/T32' }
+      : { ...o, id: prev.id, firstSeen: prev.firstSeen, lastSeen: NOW, status: 'OPEN', isNew: false });
     prevByKey.delete(key);
     carriedCount++;
   } else {
@@ -480,7 +494,7 @@ for (const o of orders) {
     newCount++;
   }
 }
-const resolved = [...prevByKey.values()].map((o) => ({ id: o.id, repo: o.repo, kind: o.kind, title: o.title, resolvedAt: NOW }));
+const resolved = [...prevByKey.values()].map((o) => ({ id: o.id, repo: o.repo, kind: o.kind, title: o.title, status: o.status, resolvedAt: NOW }));
 merged.sort((a, b) => SEV[a.severity] - SEV[b.severity] || (a.lastSeen < b.lastSeen ? -1 : 1));
 // הקצאת מזהים — שמירת מזהי-היום הקיימים, המשך-מונה לחדשים
 let nextN = 1;
