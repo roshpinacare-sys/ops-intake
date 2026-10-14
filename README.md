@@ -1,5 +1,10 @@
 # ops-intake — צינור-הקליטה התפעולי של הצי
 
+[![SAOS office](https://roshpinacare-sys.github.io/Domain/badge/office.svg)](https://roshpinacare-sys.github.io/Domain/office3d/)
+[![SAOS fleet](https://roshpinacare-sys.github.io/Domain/badge/fleet.svg)](https://roshpinacare-sys.github.io/Domain/status/)
+[![steem-edge](https://roshpinacare-sys.github.io/Domain/badge/edge.svg)](https://roshpinacare-sys.github.io/Domain/money.html)
+
+
 התשובה המוסדית לשאלה של הבעלים — הפעלה-עצמית מתמשכת — איך תמיד יודעים מה יש, מה נשבר, ומה צריך לעשות עכשיו, עם משימות מוכנות-להרצה ואוריינטציה מלאה במרחב לסוכנים ולבני-אדם.
 
 הריפו הזה הוא המשלים של GridWatch. GridWatch חש בריאות-ריצות ומרפא כשלים הפיכים כל 30 דק. ops-intake לוקח את אותה מדידה צעד אחד קדימה — הופך את מה שנמדד לתור-עבודות מדודר עם משימות-מוכנות, למפת-מרחב של כל הארגון, ומסלים P0 חדשים לערוצי-הריבונות. הריפוי-האוטומטי נשאר בבעלות GridWatch; כאן נולדת העבודה-המכוונת.
