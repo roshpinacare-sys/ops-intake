@@ -13,8 +13,11 @@
       "id": "QUEUE-20261013-12",
       "firstSeen": "2026-10-13T03:21:50.505Z",
       "lastSeen": "2026-10-14T01:20:48.427Z",
-      "status": "OPEN",
-      "isNew": false
+      "status": "CLOSED",
+      "isNew": false,
+      "closedAt": "2026-10-14T06:18:43.000Z",
+      "closedVia": "receipt-healed-law/T28",
+      "closedReceipt": "האדום המקורי הבריא-מדידה: artery-decision-truth ריצה 38520845667 success (2026-10-14T06:12:18Z, API actions/runs, קריאה-חוזרת) — GridWatch ריפא בעצמו (autoRetries, פיקוח-בלבד לפי readyPrompt). fleet-health טרי: Autonomy אינו באדומים (34 ריפו — אדומים: FleetHQ/office-3d + private-67fc6249/compute-canary; שניהם נתפסים-ומטופלים ב-T28 בנפרד). קבלה-טרמינלית לפי חוק-T27: הסדר נפתר מחוץ-למבצע."
     },
     {
       "kind": "polish",
