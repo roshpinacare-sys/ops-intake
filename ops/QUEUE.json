@@ -13,8 +13,15 @@
       "id": "QUEUE-20261014-15",
       "firstSeen": "2026-10-14T06:30:17.371Z",
       "lastSeen": "2026-10-14T06:30:17.371Z",
-      "status": "OPEN",
-      "isNew": true
+      "status": "CLOSED",
+      "isNew": true,
+      "closedAt": "2026-10-14T11:08:39.294Z",
+      "closedBy": "t30-heal-close [T30]",
+      "closureReceipt": {
+        "law": "receipt-healed-law/T30",
+        "at": "2026-10-14T11:08:39.294Z",
+        "result": "healed-verified — office-3d ירוק: run 38521659279 SUCCESS אחרי תיקון-שורש ב-T28 (קבלה 55b48e24b); fleet-health 11:00:20Z red=0 alerts=0."
+      }
     },
     {
       "kind": "gridwatch-owned",
@@ -26,8 +33,15 @@
       "id": "QUEUE-20261014-16",
       "firstSeen": "2026-10-14T06:30:17.371Z",
       "lastSeen": "2026-10-14T06:30:17.371Z",
-      "status": "OPEN",
-      "isNew": true
+      "status": "CLOSED",
+      "isNew": true,
+      "closedAt": "2026-10-14T11:08:39.294Z",
+      "closedBy": "t30-heal-close [T30]",
+      "closureReceipt": {
+        "law": "receipt-healed-law/T30",
+        "at": "2026-10-14T11:08:39.294Z",
+        "result": "healed-verified — compute-canary מושבת לפי חוק-T23 (קבלה 81ce6cfe8, state=disabled_manually); fleet-health 11:00:20Z red=0 alerts=0."
+      }
     },
     {
       "kind": "polish",
