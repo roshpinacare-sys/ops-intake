@@ -1,30 +1,16 @@
 {
- "generatedAt": "2026-10-14T13:07:31.313Z",
+ "generatedAt": "2026-10-14T13:12:35.188Z",
  "cadenceMin": 30,
  "contract": "בחר את סדר-העבודה הפתוח הראשון לפי P0..P3 שהריפו שלו אינו בבעלות סוכן אחר — בדוק worklog.md של הריפו-יעד קודם",
- "orders": [
-  {
-   "kind": "gridwatch-owned",
-   "repo": "Domain",
-   "severity": "P2",
-   "title": "אדומים בטיפול GridWatch — Domain",
-   "why": "GridWatch מדווח 1 וורקפלו אדומים בריפו זה (exposure-gate) ומפעיל ריפוי-עצמי בניסיון-חוזר (autoRetries). נבדק מתוך fleet-health.json בשעה 2026-10-14T13:07:31.313Z.",
-   "readyPrompt": "יעד — פיקוח בלבד. הריפוי נמצא בבעלות GridWatch (Domain). אל תריץ ניסיונות-ריפוי מקבילים כדי שלא ליצור עומס-דחיפות.\nריפו — Domain (מעקב), GridWatch (מקור-האמת).\nקריאות ראשונות — GridWatch/state/fleet-health.json (autoRetries, remediations, alerts), worklog.md של GridWatch, ops-intake ops/QUEUE.json.\nפעולה — בדוק אם אחרי 3 מחזורי GridWatch האדומים נותרו; רק אז פתח סדר-עבודה הנדסי חדש עם הוכחת-מדידה.\nחוקים מחייבים לכל סוכן\n- קרא קודם את worklog.md של הריפו-יעד ואת יומן-העבודה המקומי; רשום שם בעלות על המשימה לפני כתיבה ראשונה.\n- אנטי-זיוף — כל קביעה חייבת מדידה; אסור להציג מצב שלא אומתת בקריאה-חוזרת.\n- אסור לחשוף, להעתיק או להתחייב חומר-מפתח, טוקן או סוד בשום קובץ.\n- אחרי כל כתיבה — אמת בקריאה-חוזרה (תוכן הקובץ או סטטוס העמוד והשוואת sha).\n- עברית מקצועית בלבד, ללא מירכאות-קישוט וללא פניות אישיות.\n- גע רק בריפו-היעד; אם בעלות כבר רשומה ביומן-העבודה — עבור לסדר-העבודה הבא בתור.",
-   "id": "QUEUE-20261014-15",
-   "firstSeen": "2026-10-14T12:40:03.318Z",
-   "lastSeen": "2026-10-14T13:07:31.313Z",
-   "status": "OPEN",
-   "isNew": false
-  }
- ],
+ "orders": [],
  "resolved": [
   {
-   "id": "QUEUE-20261014-16",
-   "repo": "roshpinacare-sys.github.io",
-   "kind": "polish",
-   "title": "אין מידע-גרסה בעמוד — שער-הכניסה",
+   "id": "QUEUE-20261014-15",
+   "repo": "Domain",
+   "kind": "gridwatch-owned",
+   "title": "אדומים בטיפול GridWatch — Domain",
    "status": "OPEN",
-   "resolvedAt": "2026-10-14T13:07:31.313Z"
+   "resolvedAt": "2026-10-14T13:12:35.188Z"
   }
  ]
 }
