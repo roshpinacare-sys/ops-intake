@@ -252,7 +252,7 @@ for (const s of PAGES_SITES) {
     // — measure the TEXT, not the markup; and accept colon/dash-separated stamps
     // (`build: 2026-10-11`, `גרסה: v0.2.1`) while still requiring a digit (no "build and deployment" false positive).
     const pageText = html.replace(/<[^>]{0,200}>/g, ' ');
-    const hasVersion = /version|v\d+\.\d+|build[\s:#_-]*\d|מספר-גרסה|גרסה[\s:#_-]*\d/i.test(pageText);
+    const hasVersion = /version|v\d+\.\d+|build[\s:#_-]*\d|מספר-גרסה|גרסה[\s:#_-]*\d|נבנה[\s:#_-]*\d|גרסה\s+[0-9a-f]{6,40}/i.test(pageText);
     sites.push({ ...s, http: r.status, ok: r.ok, hasVersion });
   } catch (e) { sites.push({ ...s, http: 0, ok: false, hasVersion: false, error: String(e.message).slice(0, 60) }); }
   await sleep(30);
