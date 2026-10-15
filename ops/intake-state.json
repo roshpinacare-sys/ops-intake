@@ -45,7 +45,13 @@
   "carried": 4,
   "resolvedOrDropped": 1
  },
- "escalations": [],
+ "escalations": [
+  {
+   "id": "QUEUE-20261015-07",
+   "repo": "roshpinacare-sys",
+   "kind": "owner-decision"
+  }
+ ],
  "apiCalls": 373,
  "apiQuota": {
   "limit": 5000,
@@ -1951,5 +1957,6 @@
    "sha": null,
    "cron": null
   }
- }
+ },
+ "verified": true
 }
