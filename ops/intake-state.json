@@ -1,8 +1,8 @@
 {
- "generatedAt": "2026-10-27T05:57:36.414Z",
+ "generatedAt": "2026-10-27T11:27:59.978Z",
  "version": 1,
  "cadenceMin": 30,
- "durationSec": 145,
+ "durationSec": 152,
  "reposScanned": 49,
  "publicRepos": 40,
  "privateRepos": 9,
@@ -38,17 +38,17 @@
   }
  ],
  "orders": {
-  "open": 8,
-  "new": 3,
-  "carried": 5,
-  "resolvedOrDropped": 1
+  "open": 6,
+  "new": 0,
+  "carried": 6,
+  "resolvedOrDropped": 2
  },
  "escalations": [],
- "apiCalls": 484,
+ "apiCalls": 471,
  "apiQuota": {
   "limit": 5000,
-  "remaining": 4595,
-  "resetAt": "2026-10-27T06:54:19.000Z"
+  "remaining": 4076,
+  "resetAt": "2026-10-27T11:56:30.000Z"
  },
  "cronCache": {
   "Console::.github/workflows/agent-verify.yml": {
@@ -219,82 +219,412 @@
    "sha": null,
    "cron": null
   },
-  "saos-dex::.github/workflows/arb-scan.yml": {
-   "sha": "1271e4fb85912ba8ce2d86a03e57ccee3ec03694",
-   "cron": null,
-   "all": []
+  "Autonomy::.github/workflows/agent-9-clock-guard.yml": {
+   "sha": "12e4584f8cd46fb82a234c72ee7af26fda35457d",
+   "cron": "23 * * * *",
+   "all": [
+    "23 * * * *",
+    "51 * * * *"
+   ]
   },
-  "saos-dex::.github/workflows/ci.yml": {
-   "sha": "061998cb8bc4e3877c2227676514bb197b40e822",
-   "cron": null,
-   "all": []
+  "Autonomy::.github/workflows/agent-9-org-revival.yml": {
+   "sha": "355e0435fce72bdaae68d59547775887cb90de1f",
+   "cron": "17 6 * * *",
+   "all": [
+    "17 6 * * *"
+   ]
   },
-  "saos-dex::.github/workflows/curate.yml": {
-   "sha": "50234a6b865327999f4c9b94938c8077f4ab2566",
+  "Autonomy::.github/workflows/agent-9-vault-sync.yml": {
+   "sha": "c57e5f2ba53cc65f75a8c4ef577d8ecf53af79ee",
+   "cron": "47 3 * * *",
+   "all": [
+    "47 3 * * *"
+   ]
+  },
+  "Autonomy::.github/workflows/artery-autotrade-hedge-gate.yml": {
+   "sha": "b9ab576efde257710f222b6f7ad180ad5746b426",
+   "cron": "37 * * * *",
+   "all": [
+    "37 * * * *"
+   ]
+  },
+  "Autonomy::.github/workflows/artery-builder.yml": {
+   "sha": "5f7e6f00e5aa7ed828d358158f766394948f15cc",
+   "cron": "17 * * * *",
+   "all": [
+    "17 * * * *"
+   ]
+  },
+  "Autonomy::.github/workflows/artery-catchup.yml": {
+   "sha": "6bdb4d40ffe51e95a2db858f1efda4e1a55e553f",
+   "cron": "7,37 * * * *",
+   "all": [
+    "7,37 * * * *"
+   ]
+  },
+  "Autonomy::.github/workflows/artery-decision-truth.yml": {
+   "sha": "eb05137556371c77a6370aa622d215beb179f350",
+   "cron": "16,46 * * * *",
+   "all": [
+    "16,46 * * * *"
+   ]
+  },
+  "Autonomy::.github/workflows/artery-defi.yml": {
+   "sha": "acd1ad1f6951f0062d5aee909bcdb5697b176c83",
    "cron": "17 */6 * * *",
    "all": [
     "17 */6 * * *"
    ]
   },
-  "saos-dex::.github/workflows/dex-beat.yml": {
-   "sha": "a08c1d3d024e1b907b12a7aa9f02a15eb88929e1",
-   "cron": null,
-   "all": []
-  },
-  "saos-dex::.github/workflows/dex-grid.yml": {
-   "sha": "4832d14ec208574d2b4c45e5e94cbcfd4015aa96",
-   "cron": null,
-   "all": []
-  },
-  "saos-dex::.github/workflows/external-profit-publish.yml": {
-   "sha": "e3d4ad89ff631615deedb8b75cbdee98276b40b3",
-   "cron": "43 */2 * * *",
+  "Autonomy::.github/workflows/artery-desk.yml": {
+   "sha": "a7c32cc4d4baf9055db1662cae30880c24035261",
+   "cron": "41 */2 * * *",
    "all": [
-    "43 */2 * * *"
+    "41 */2 * * *"
    ]
   },
-  "saos-dex::.github/workflows/gitleaks.yml": {
-   "sha": "f7f5e65980cc8a81501bc541b3ae86344b68bebe",
-   "cron": null,
-   "all": []
-  },
-  "saos-dex::.github/workflows/grid-trigger.yml": {
-   "sha": "43bc07b27616f758210906d03c7d0cf69b2eec10",
-   "cron": null,
-   "all": []
-  },
-  "saos-dex::.github/workflows/hive-heartbeat.yml": {
-   "sha": "d1c885f34d363c36c8144771460caea7ca0ba9d6",
-   "cron": null,
-   "all": []
-  },
-  "saos-dex::.github/workflows/identity-guard.yml": {
-   "sha": "bc19b2495e06b313dfe23f2a0d1821200ff94ced",
-   "cron": "53 7 * * 1",
+  "Autonomy::.github/workflows/artery-fixedfloat.yml": {
+   "sha": "744a88d3da9e35952bb4b4df7ea2f5e3bd812586",
+   "cron": "37 */4 * * *",
    "all": [
-    "53 7 * * 1",
-    "53 9 * * *"
+    "37 */4 * * *"
    ]
   },
-  "saos-dex::.github/workflows/llm-bridge.yml": {
-   "sha": "514a009b7263ca17b75ade3ae3fca81b1212f15b",
+  "Autonomy::.github/workflows/artery-fleet.yml": {
+   "sha": "f0283e692c27ffabb8fce4f298f7183e88048210",
+   "cron": "25 */2 * * *",
+   "all": [
+    "25 */2 * * *"
+   ]
+  },
+  "Autonomy::.github/workflows/artery-flow.yml": {
+   "sha": "07f2f0b8a825a5a0e867ebfd24d91ea28ad053a2",
+   "cron": "20 */3 * * *",
+   "all": [
+    "20 */3 * * *"
+   ]
+  },
+  "Autonomy::.github/workflows/artery-grid.yml": {
+   "sha": "2190a301acb1956bde4ceab1540924351932d542",
+   "cron": "*/30 * * * *",
+   "all": [
+    "*/30 * * * *"
+   ]
+  },
+  "Autonomy::.github/workflows/artery-growth.yml": {
+   "sha": "def5413c338084d7cff55e8101a4eb926f74dcd0",
+   "cron": "19 6 * * *",
+   "all": [
+    "19 6 * * *"
+   ]
+  },
+  "Autonomy::.github/workflows/artery-integrity.yml": {
+   "sha": "b327ccf1c9e5d89b4c6d711ffdb80bf439e0aa97",
+   "cron": "25 * * * *",
+   "all": [
+    "25 * * * *"
+   ]
+  },
+  "Autonomy::.github/workflows/artery-pacer.yml": {
+   "sha": "b897e6824c88e9c9003214baeafe6990a6ac63e8",
+   "cron": "7 2 * * *",
+   "all": [
+    "7 2 * * *"
+   ]
+  },
+  "Autonomy::.github/workflows/artery-participation.yml": {
+   "sha": "39293b914f6de639c69993738549d83beb1952fa",
+   "cron": "13 * * * *",
+   "all": [
+    "13 * * * *"
+   ]
+  },
+  "Autonomy::.github/workflows/artery-scout.yml": {
+   "sha": "4c56da50294f481e8b139433b432148e8ea969e9",
+   "cron": "18 5,14 * * *",
+   "all": [
+    "18 5,14 * * *"
+   ]
+  },
+  "Autonomy::.github/workflows/artery-scribe.yml": {
+   "sha": "3330f5577dcc9ba66ca7711de5b6b3bd7b5f5859",
+   "cron": "5 3 * * *",
+   "all": [
+    "5 3 * * *"
+   ]
+  },
+  "Autonomy::.github/workflows/artery-selfheal.yml": {
+   "sha": "10b9ea45787a092dc74523632d7f21fe0007cdf1",
+   "cron": "11,41 * * * *",
+   "all": [
+    "11,41 * * * *"
+   ]
+  },
+  "Autonomy::.github/workflows/artery-treasury-consolidate.yml": {
+   "sha": "ebc5c714b17230f6815f42af9ee54bec4e6b73e8",
+   "cron": "23 6 * * *",
+   "all": [
+    "23 6 * * *"
+   ]
+  },
+  "Autonomy::.github/workflows/artery-treasury-floor-watch.yml": {
+   "sha": "6bbfdd2a5556bcfed80e4295c23067f2a755b838",
+   "cron": "23 * * * *",
+   "all": [
+    "23 * * * *"
+   ]
+  },
+  "Autonomy::.github/workflows/artery-treasury.yml": {
+   "sha": "3b41468a601f4ee8ccffb35909e69dbf04ba2131",
+   "cron": "33 6 * * *",
+   "all": [
+    "33 6 * * *"
+   ]
+  },
+  "Autonomy::.github/workflows/artery-wallet.yml": {
+   "sha": "f34a21ea87bf0c7f1570b5f0508264e0f5cfc5cd",
+   "cron": "40 * * * *",
+   "all": [
+    "40 * * * *"
+   ]
+  },
+  "Autonomy::.github/workflows/artery-watch.yml": {
+   "sha": "2411007c1bc8945e0e10746577ac50a2dddfa852",
+   "cron": "*/15 * * * *",
+   "all": [
+    "*/15 * * * *"
+   ]
+  },
+  "Autonomy::.github/workflows/claims-intake.yml": {
+   "sha": "ba0acebf6377bbacb1430a1d6f41ab43f24bf597",
+   "cron": "41 */4 * * *",
+   "all": [
+    "41 */4 * * *"
+   ]
+  },
+  "Autonomy::.github/workflows/compute-rearm.yml": {
+   "sha": "754386535f577bbb7c24d362a64824166aadaec3",
+   "cron": "23 * * * *",
+   "all": [
+    "23 * * * *"
+   ]
+  },
+  "Autonomy::.github/workflows/contract-check.yml": {
+   "sha": "ed76ee4717788cdf701be4d2c01f6caece991d36",
+   "cron": "23/30 * * * *",
+   "all": [
+    "23/30 * * * *"
+   ]
+  },
+  "Autonomy::.github/workflows/directive-bus.yml": {
+   "sha": "4e053cf51328e1fe17c51e7ec33162bce4afc6ee",
+   "cron": "*/30 * * * *",
+   "all": [
+    "*/30 * * * *",
+    "13,43 * * * *",
+    "27,57 * * * *"
+   ]
+  },
+  "Autonomy::.github/workflows/estate-relay.yml": {
+   "sha": "0e6010e5a8a6a0f0c1117377385b1bc0d3d7eb79",
+   "cron": "47 3 * * *",
+   "all": [
+    "47 3 * * *"
+   ]
+  },
+  "Autonomy::.github/workflows/estate-vault.yml": {
+   "sha": "42d7e61b59a213eae737186960b5ad69a0885f0d",
+   "cron": "23 2 * * *",
+   "all": [
+    "23 2 * * *"
+   ]
+  },
+  "Autonomy::.github/workflows/evo-windows-staleness.yml": {
+   "sha": "270a03dfec3a86b0586063d57dc5719792640c8a",
+   "cron": "37 6 * * 2",
+   "all": [
+    "37 6 * * 2"
+   ]
+  },
+  "Autonomy::.github/workflows/executor.yml": {
+   "sha": "12dff7cf7f7a750702119b539e08a1d0ae4c603b",
    "cron": null,
    "all": []
   },
-  "saos-dex::.github/workflows/mm-supremacy.yml": {
-   "sha": "60fa96bfdc3b3cdac07d1d105ad9a354f12016a1",
+  "Autonomy::.github/workflows/federation.yml": {
+   "sha": "da5d5e7dea75136bf7637c5269fd10585104f860",
+   "cron": "19,49 * * * *",
+   "all": [
+    "19,49 * * * *"
+   ]
+  },
+  "Autonomy::.github/workflows/fleet-heal.yml": {
+   "sha": "47aa51b9f641a0a188f72bc83f603ac028abf501",
+   "cron": "5,35 * * * *",
+   "all": [
+    "5,35 * * * *"
+   ]
+  },
+  "Autonomy::.github/workflows/fleet-yield.yml": {
+   "sha": "bd9ce54a804ff9f9df18f95f737f4b84b9e0bd2d",
+   "cron": "11 */2 * * *",
+   "all": [
+    "11 */2 * * *"
+   ]
+  },
+  "Autonomy::.github/workflows/floating-builds.yml": {
+   "sha": "6ca1d630fa972b1d46bf668574083c7b95f56321",
+   "cron": "17 */2 * * *",
+   "all": [
+    "17 */2 * * *"
+   ]
+  },
+  "Autonomy::.github/workflows/fresh-oracle.yml": {
+   "sha": "7fcdeedc9798f9e6303cac8201744a4dfd8c33f7",
+   "cron": "7 5 * * 3",
+   "all": [
+    "7 5 * * 3"
+   ]
+  },
+  "Autonomy::.github/workflows/hive-probe.yml": {
+   "sha": "9eca774816df28674aa321aedcdacba7286cfea7",
+   "cron": "41 5 * * *",
+   "all": [
+    "41 5 * * *",
+    "23 14 * * *"
+   ]
+  },
+  "Autonomy::.github/workflows/identity-guard.yml": {
+   "sha": "cf3a4eb2a15ef2aa50618c1ffa11c98d72a018b5",
    "cron": null,
    "all": []
   },
-  "saos-dex::.github/workflows/selftest.yml": {
-   "sha": "a0cb9549fbd5c289b78b6b84b26bb65bb0a01cea",
-   "cron": null,
-   "all": []
+  "Autonomy::.github/workflows/key-proof.yml": {
+   "sha": "fdecf3c9b914f60fa3a5c39eb1508fbce5e2cd06",
+   "cron": "23 4 * * 3",
+   "all": [
+    "23 4 * * 3"
+   ]
   },
-  "saos-dex::.github/workflows/workflow-yaml-guard.yml": {
-   "sha": "823ae27de766e1d861c1380854e8879eb325355b",
-   "cron": null,
-   "all": []
+  "Autonomy::.github/workflows/network-awareness.yml": {
+   "sha": "1636340d6772de1165360266a497c1422a2d983a",
+   "cron": "13,43 * * * *",
+   "all": [
+    "13,43 * * * *"
+   ]
+  },
+  "Autonomy::.github/workflows/network-self-awareness.yml": {
+   "sha": "b3ba13ed0815f93dd2e174a824d7383b96c2456c",
+   "cron": "23 */6 * * *",
+   "all": [
+    "23 */6 * * *"
+   ]
+  },
+  "Autonomy::.github/workflows/office-growth.yml": {
+   "sha": "ab4ba389677aab64d00f4695626edce60c255ac0",
+   "cron": "41 */6 * * *",
+   "all": [
+    "41 */6 * * *"
+   ]
+  },
+  "Autonomy::.github/workflows/operator-routing.yml": {
+   "sha": "731d0c2d2969767f14e1833c41f58f225eea75a0",
+   "cron": "23,53 * * * *",
+   "all": [
+    "23,53 * * * *"
+   ]
+  },
+  "Autonomy::.github/workflows/profit-oracle.yml": {
+   "sha": "3364b16feef7c518e648e1f675ab1bda2aee8b10",
+   "cron": "29 5 * * *",
+   "all": [
+    "29 5 * * *"
+   ]
+  },
+  "Autonomy::.github/workflows/research-lane.yml": {
+   "sha": "90df92fc06bdbf3e0c832f4e05a82e1b86f9b4a9",
+   "cron": "23 5 * * 1",
+   "all": [
+    "23 5 * * 1"
+   ]
+  },
+  "Autonomy::.github/workflows/retro.yml": {
+   "sha": "a6acb3cfbaed4e66241223f8b404599b7191fd12",
+   "cron": "17 5 * * 1",
+   "all": [
+    "17 5 * * 1"
+   ]
+  },
+  "Autonomy::.github/workflows/run-score.yml": {
+   "sha": "7dc6edf5619c9ed4cf7a23a8f5b2a2daa4c38c4c",
+   "cron": "37 */3 * * *",
+   "all": [
+    "37 */3 * * *"
+   ]
+  },
+  "Autonomy::.github/workflows/selfhood.yml": {
+   "sha": "079465f2b13b8833669ed168469cc5d23fe13cc2",
+   "cron": "7/20 * * * *",
+   "all": [
+    "7/20 * * * *"
+   ]
+  },
+  "Autonomy::.github/workflows/sovereign-arming-check.yml": {
+   "sha": "03338583921ecc5f0ca6a129a13bc7b8a8c4dcb3",
+   "cron": "5 2 * * *",
+   "all": [
+    "5 2 * * *"
+   ]
+  },
+  "Autonomy::.github/workflows/sovereign-decider.yml": {
+   "sha": "79cf4383b63ae014e8b2973522239320930f2afe",
+   "cron": "9,39 * * * *",
+   "all": [
+    "9,39 * * * *"
+   ]
+  },
+  "Autonomy::.github/workflows/sovereign-state.yml": {
+   "sha": "a80428428226e01e4adec20e194989c796a06e55",
+   "cron": "3,18,33,48 * * * *",
+   "all": [
+    "3,18,33,48 * * * *"
+   ]
+  },
+  "Autonomy::.github/workflows/sovereign.yml": {
+   "sha": "8f0aa070d65e0f355a637b0da39ef74869a5af09",
+   "cron": "21 * * * *",
+   "all": [
+    "21 * * * *"
+   ]
+  },
+  "Autonomy::.github/workflows/token-watchdog.yml": {
+   "sha": "6d979c4dadf505150518f4c48e6313c67c6bb4b6",
+   "cron": "40 5 * * *",
+   "all": [
+    "40 5 * * *"
+   ]
+  },
+  "Autonomy::.github/workflows/value-scan.yml": {
+   "sha": "bb45db5391971906cc734f678ef43638416b2adc",
+   "cron": "17,47 * * * *",
+   "all": [
+    "17,47 * * * *"
+   ]
+  },
+  "Autonomy::.github/workflows/verifier.yml": {
+   "sha": "d395d2c74e03aa885be6857b84b851fb1cec9dbb",
+   "cron": "7,37 * * * *",
+   "all": [
+    "7,37 * * * *",
+    "23,53 * * * *"
+   ]
+  },
+  "Autonomy::.github/workflows/world-evolver.yml": {
+   "sha": "5ab23bfe555ee6cf12d7711d3ff4ccc680658a25",
+   "cron": "19 */2 * * *",
+   "all": [
+    "19 */2 * * *"
+   ]
   },
   "Domain::.github/workflows/adsmarket-panel.yml": {
    "sha": "1329f1b7454c9304be09a6ebfc08603aed9c1170",
@@ -975,6 +1305,83 @@
     "47 6 * * *"
    ]
   },
+  "saos-dex::.github/workflows/arb-scan.yml": {
+   "sha": "1271e4fb85912ba8ce2d86a03e57ccee3ec03694",
+   "cron": null,
+   "all": []
+  },
+  "saos-dex::.github/workflows/ci.yml": {
+   "sha": "061998cb8bc4e3877c2227676514bb197b40e822",
+   "cron": null,
+   "all": []
+  },
+  "saos-dex::.github/workflows/curate.yml": {
+   "sha": "50234a6b865327999f4c9b94938c8077f4ab2566",
+   "cron": "17 */6 * * *",
+   "all": [
+    "17 */6 * * *"
+   ]
+  },
+  "saos-dex::.github/workflows/dex-beat.yml": {
+   "sha": "a08c1d3d024e1b907b12a7aa9f02a15eb88929e1",
+   "cron": null,
+   "all": []
+  },
+  "saos-dex::.github/workflows/dex-grid.yml": {
+   "sha": "4832d14ec208574d2b4c45e5e94cbcfd4015aa96",
+   "cron": null,
+   "all": []
+  },
+  "saos-dex::.github/workflows/external-profit-publish.yml": {
+   "sha": "e3d4ad89ff631615deedb8b75cbdee98276b40b3",
+   "cron": "43 */2 * * *",
+   "all": [
+    "43 */2 * * *"
+   ]
+  },
+  "saos-dex::.github/workflows/gitleaks.yml": {
+   "sha": "f7f5e65980cc8a81501bc541b3ae86344b68bebe",
+   "cron": null,
+   "all": []
+  },
+  "saos-dex::.github/workflows/grid-trigger.yml": {
+   "sha": "43bc07b27616f758210906d03c7d0cf69b2eec10",
+   "cron": null,
+   "all": []
+  },
+  "saos-dex::.github/workflows/hive-heartbeat.yml": {
+   "sha": "d1c885f34d363c36c8144771460caea7ca0ba9d6",
+   "cron": null,
+   "all": []
+  },
+  "saos-dex::.github/workflows/identity-guard.yml": {
+   "sha": "bc19b2495e06b313dfe23f2a0d1821200ff94ced",
+   "cron": "53 7 * * 1",
+   "all": [
+    "53 7 * * 1",
+    "53 9 * * *"
+   ]
+  },
+  "saos-dex::.github/workflows/llm-bridge.yml": {
+   "sha": "514a009b7263ca17b75ade3ae3fca81b1212f15b",
+   "cron": null,
+   "all": []
+  },
+  "saos-dex::.github/workflows/mm-supremacy.yml": {
+   "sha": "60fa96bfdc3b3cdac07d1d105ad9a354f12016a1",
+   "cron": null,
+   "all": []
+  },
+  "saos-dex::.github/workflows/selftest.yml": {
+   "sha": "a0cb9549fbd5c289b78b6b84b26bb65bb0a01cea",
+   "cron": null,
+   "all": []
+  },
+  "saos-dex::.github/workflows/workflow-yaml-guard.yml": {
+   "sha": "823ae27de766e1d861c1380854e8879eb325355b",
+   "cron": null,
+   "all": []
+  },
   "Sandbox::.github/workflows/agent-access.yml": {
    "sha": "bc01074c52ffe8f56b674149ae43c2a000bda2c2",
    "cron": null,
@@ -1293,413 +1700,6 @@
    "sha": null,
    "cron": null
   },
-  "Autonomy::.github/workflows/agent-9-clock-guard.yml": {
-   "sha": "12e4584f8cd46fb82a234c72ee7af26fda35457d",
-   "cron": "23 * * * *",
-   "all": [
-    "23 * * * *",
-    "51 * * * *"
-   ]
-  },
-  "Autonomy::.github/workflows/agent-9-org-revival.yml": {
-   "sha": "355e0435fce72bdaae68d59547775887cb90de1f",
-   "cron": "17 6 * * *",
-   "all": [
-    "17 6 * * *"
-   ]
-  },
-  "Autonomy::.github/workflows/agent-9-vault-sync.yml": {
-   "sha": "c57e5f2ba53cc65f75a8c4ef577d8ecf53af79ee",
-   "cron": "47 3 * * *",
-   "all": [
-    "47 3 * * *"
-   ]
-  },
-  "Autonomy::.github/workflows/artery-autotrade-hedge-gate.yml": {
-   "sha": "b9ab576efde257710f222b6f7ad180ad5746b426",
-   "cron": "37 * * * *",
-   "all": [
-    "37 * * * *"
-   ]
-  },
-  "Autonomy::.github/workflows/artery-builder.yml": {
-   "sha": "5f7e6f00e5aa7ed828d358158f766394948f15cc",
-   "cron": "17 * * * *",
-   "all": [
-    "17 * * * *"
-   ]
-  },
-  "Autonomy::.github/workflows/artery-catchup.yml": {
-   "sha": "6bdb4d40ffe51e95a2db858f1efda4e1a55e553f",
-   "cron": "7,37 * * * *",
-   "all": [
-    "7,37 * * * *"
-   ]
-  },
-  "Autonomy::.github/workflows/artery-decision-truth.yml": {
-   "sha": "eb05137556371c77a6370aa622d215beb179f350",
-   "cron": "16,46 * * * *",
-   "all": [
-    "16,46 * * * *"
-   ]
-  },
-  "Autonomy::.github/workflows/artery-defi.yml": {
-   "sha": "acd1ad1f6951f0062d5aee909bcdb5697b176c83",
-   "cron": "17 */6 * * *",
-   "all": [
-    "17 */6 * * *"
-   ]
-  },
-  "Autonomy::.github/workflows/artery-desk.yml": {
-   "sha": "a7c32cc4d4baf9055db1662cae30880c24035261",
-   "cron": "41 */2 * * *",
-   "all": [
-    "41 */2 * * *"
-   ]
-  },
-  "Autonomy::.github/workflows/artery-fixedfloat.yml": {
-   "sha": "744a88d3da9e35952bb4b4df7ea2f5e3bd812586",
-   "cron": "37 */4 * * *",
-   "all": [
-    "37 */4 * * *"
-   ]
-  },
-  "Autonomy::.github/workflows/artery-fleet.yml": {
-   "sha": "f0283e692c27ffabb8fce4f298f7183e88048210",
-   "cron": "25 */2 * * *",
-   "all": [
-    "25 */2 * * *"
-   ]
-  },
-  "Autonomy::.github/workflows/artery-flow.yml": {
-   "sha": "07f2f0b8a825a5a0e867ebfd24d91ea28ad053a2",
-   "cron": "20 */3 * * *",
-   "all": [
-    "20 */3 * * *"
-   ]
-  },
-  "Autonomy::.github/workflows/artery-grid.yml": {
-   "sha": "2190a301acb1956bde4ceab1540924351932d542",
-   "cron": "*/30 * * * *",
-   "all": [
-    "*/30 * * * *"
-   ]
-  },
-  "Autonomy::.github/workflows/artery-growth.yml": {
-   "sha": "def5413c338084d7cff55e8101a4eb926f74dcd0",
-   "cron": "19 6 * * *",
-   "all": [
-    "19 6 * * *"
-   ]
-  },
-  "Autonomy::.github/workflows/artery-integrity.yml": {
-   "sha": "b327ccf1c9e5d89b4c6d711ffdb80bf439e0aa97",
-   "cron": "25 * * * *",
-   "all": [
-    "25 * * * *"
-   ]
-  },
-  "Autonomy::.github/workflows/artery-pacer.yml": {
-   "sha": "b897e6824c88e9c9003214baeafe6990a6ac63e8",
-   "cron": "7 2 * * *",
-   "all": [
-    "7 2 * * *"
-   ]
-  },
-  "Autonomy::.github/workflows/artery-participation.yml": {
-   "sha": "39293b914f6de639c69993738549d83beb1952fa",
-   "cron": "13 * * * *",
-   "all": [
-    "13 * * * *"
-   ]
-  },
-  "Autonomy::.github/workflows/artery-scout.yml": {
-   "sha": "4c56da50294f481e8b139433b432148e8ea969e9",
-   "cron": "18 5,14 * * *",
-   "all": [
-    "18 5,14 * * *"
-   ]
-  },
-  "Autonomy::.github/workflows/artery-scribe.yml": {
-   "sha": "3330f5577dcc9ba66ca7711de5b6b3bd7b5f5859",
-   "cron": "5 3 * * *",
-   "all": [
-    "5 3 * * *"
-   ]
-  },
-  "Autonomy::.github/workflows/artery-selfheal.yml": {
-   "sha": "10b9ea45787a092dc74523632d7f21fe0007cdf1",
-   "cron": "11,41 * * * *",
-   "all": [
-    "11,41 * * * *"
-   ]
-  },
-  "Autonomy::.github/workflows/artery-treasury-consolidate.yml": {
-   "sha": "ebc5c714b17230f6815f42af9ee54bec4e6b73e8",
-   "cron": "23 6 * * *",
-   "all": [
-    "23 6 * * *"
-   ]
-  },
-  "Autonomy::.github/workflows/artery-treasury-floor-watch.yml": {
-   "sha": "6bbfdd2a5556bcfed80e4295c23067f2a755b838",
-   "cron": "23 * * * *",
-   "all": [
-    "23 * * * *"
-   ]
-  },
-  "Autonomy::.github/workflows/artery-treasury.yml": {
-   "sha": "3b41468a601f4ee8ccffb35909e69dbf04ba2131",
-   "cron": "33 6 * * *",
-   "all": [
-    "33 6 * * *"
-   ]
-  },
-  "Autonomy::.github/workflows/artery-wallet.yml": {
-   "sha": "f34a21ea87bf0c7f1570b5f0508264e0f5cfc5cd",
-   "cron": "40 * * * *",
-   "all": [
-    "40 * * * *"
-   ]
-  },
-  "Autonomy::.github/workflows/artery-watch.yml": {
-   "sha": "2411007c1bc8945e0e10746577ac50a2dddfa852",
-   "cron": "*/15 * * * *",
-   "all": [
-    "*/15 * * * *"
-   ]
-  },
-  "Autonomy::.github/workflows/claims-intake.yml": {
-   "sha": "ba0acebf6377bbacb1430a1d6f41ab43f24bf597",
-   "cron": "41 */4 * * *",
-   "all": [
-    "41 */4 * * *"
-   ]
-  },
-  "Autonomy::.github/workflows/compute-rearm.yml": {
-   "sha": "754386535f577bbb7c24d362a64824166aadaec3",
-   "cron": "23 * * * *",
-   "all": [
-    "23 * * * *"
-   ]
-  },
-  "Autonomy::.github/workflows/contract-check.yml": {
-   "sha": "ed76ee4717788cdf701be4d2c01f6caece991d36",
-   "cron": "23/30 * * * *",
-   "all": [
-    "23/30 * * * *"
-   ]
-  },
-  "Autonomy::.github/workflows/directive-bus.yml": {
-   "sha": "4e053cf51328e1fe17c51e7ec33162bce4afc6ee",
-   "cron": "*/30 * * * *",
-   "all": [
-    "*/30 * * * *",
-    "13,43 * * * *",
-    "27,57 * * * *"
-   ]
-  },
-  "Autonomy::.github/workflows/estate-relay.yml": {
-   "sha": "0e6010e5a8a6a0f0c1117377385b1bc0d3d7eb79",
-   "cron": "47 3 * * *",
-   "all": [
-    "47 3 * * *"
-   ]
-  },
-  "Autonomy::.github/workflows/estate-vault.yml": {
-   "sha": "42d7e61b59a213eae737186960b5ad69a0885f0d",
-   "cron": "23 2 * * *",
-   "all": [
-    "23 2 * * *"
-   ]
-  },
-  "Autonomy::.github/workflows/evo-windows-staleness.yml": {
-   "sha": "270a03dfec3a86b0586063d57dc5719792640c8a",
-   "cron": "37 6 * * 2",
-   "all": [
-    "37 6 * * 2"
-   ]
-  },
-  "Autonomy::.github/workflows/executor.yml": {
-   "sha": "12dff7cf7f7a750702119b539e08a1d0ae4c603b",
-   "cron": null,
-   "all": []
-  },
-  "Autonomy::.github/workflows/federation.yml": {
-   "sha": "da5d5e7dea75136bf7637c5269fd10585104f860",
-   "cron": "19,49 * * * *",
-   "all": [
-    "19,49 * * * *"
-   ]
-  },
-  "Autonomy::.github/workflows/fleet-heal.yml": {
-   "sha": "47aa51b9f641a0a188f72bc83f603ac028abf501",
-   "cron": "5,35 * * * *",
-   "all": [
-    "5,35 * * * *"
-   ]
-  },
-  "Autonomy::.github/workflows/fleet-yield.yml": {
-   "sha": "bd9ce54a804ff9f9df18f95f737f4b84b9e0bd2d",
-   "cron": "11 */2 * * *",
-   "all": [
-    "11 */2 * * *"
-   ]
-  },
-  "Autonomy::.github/workflows/floating-builds.yml": {
-   "sha": "6ca1d630fa972b1d46bf668574083c7b95f56321",
-   "cron": "17 */2 * * *",
-   "all": [
-    "17 */2 * * *"
-   ]
-  },
-  "Autonomy::.github/workflows/fresh-oracle.yml": {
-   "sha": "7fcdeedc9798f9e6303cac8201744a4dfd8c33f7",
-   "cron": "7 5 * * 3",
-   "all": [
-    "7 5 * * 3"
-   ]
-  },
-  "Autonomy::.github/workflows/hive-probe.yml": {
-   "sha": "9eca774816df28674aa321aedcdacba7286cfea7",
-   "cron": "41 5 * * *",
-   "all": [
-    "41 5 * * *",
-    "23 14 * * *"
-   ]
-  },
-  "Autonomy::.github/workflows/identity-guard.yml": {
-   "sha": "cf3a4eb2a15ef2aa50618c1ffa11c98d72a018b5",
-   "cron": null,
-   "all": []
-  },
-  "Autonomy::.github/workflows/key-proof.yml": {
-   "sha": "fdecf3c9b914f60fa3a5c39eb1508fbce5e2cd06",
-   "cron": "23 4 * * 3",
-   "all": [
-    "23 4 * * 3"
-   ]
-  },
-  "Autonomy::.github/workflows/network-awareness.yml": {
-   "sha": "1636340d6772de1165360266a497c1422a2d983a",
-   "cron": "13,43 * * * *",
-   "all": [
-    "13,43 * * * *"
-   ]
-  },
-  "Autonomy::.github/workflows/network-self-awareness.yml": {
-   "sha": "b3ba13ed0815f93dd2e174a824d7383b96c2456c",
-   "cron": "23 */6 * * *",
-   "all": [
-    "23 */6 * * *"
-   ]
-  },
-  "Autonomy::.github/workflows/office-growth.yml": {
-   "sha": "ab4ba389677aab64d00f4695626edce60c255ac0",
-   "cron": "41 */6 * * *",
-   "all": [
-    "41 */6 * * *"
-   ]
-  },
-  "Autonomy::.github/workflows/operator-routing.yml": {
-   "sha": "731d0c2d2969767f14e1833c41f58f225eea75a0",
-   "cron": "23,53 * * * *",
-   "all": [
-    "23,53 * * * *"
-   ]
-  },
-  "Autonomy::.github/workflows/profit-oracle.yml": {
-   "sha": "3364b16feef7c518e648e1f675ab1bda2aee8b10",
-   "cron": "29 5 * * *",
-   "all": [
-    "29 5 * * *"
-   ]
-  },
-  "Autonomy::.github/workflows/research-lane.yml": {
-   "sha": "90df92fc06bdbf3e0c832f4e05a82e1b86f9b4a9",
-   "cron": "23 5 * * 1",
-   "all": [
-    "23 5 * * 1"
-   ]
-  },
-  "Autonomy::.github/workflows/retro.yml": {
-   "sha": "a6acb3cfbaed4e66241223f8b404599b7191fd12",
-   "cron": "17 5 * * 1",
-   "all": [
-    "17 5 * * 1"
-   ]
-  },
-  "Autonomy::.github/workflows/run-score.yml": {
-   "sha": "7dc6edf5619c9ed4cf7a23a8f5b2a2daa4c38c4c",
-   "cron": "37 */3 * * *",
-   "all": [
-    "37 */3 * * *"
-   ]
-  },
-  "Autonomy::.github/workflows/selfhood.yml": {
-   "sha": "079465f2b13b8833669ed168469cc5d23fe13cc2",
-   "cron": "7/20 * * * *",
-   "all": [
-    "7/20 * * * *"
-   ]
-  },
-  "Autonomy::.github/workflows/sovereign-arming-check.yml": {
-   "sha": "03338583921ecc5f0ca6a129a13bc7b8a8c4dcb3",
-   "cron": "5 2 * * *",
-   "all": [
-    "5 2 * * *"
-   ]
-  },
-  "Autonomy::.github/workflows/sovereign-decider.yml": {
-   "sha": "79cf4383b63ae014e8b2973522239320930f2afe",
-   "cron": "9,39 * * * *",
-   "all": [
-    "9,39 * * * *"
-   ]
-  },
-  "Autonomy::.github/workflows/sovereign-state.yml": {
-   "sha": "a80428428226e01e4adec20e194989c796a06e55",
-   "cron": "3,18,33,48 * * * *",
-   "all": [
-    "3,18,33,48 * * * *"
-   ]
-  },
-  "Autonomy::.github/workflows/sovereign.yml": {
-   "sha": "8f0aa070d65e0f355a637b0da39ef74869a5af09",
-   "cron": "21 * * * *",
-   "all": [
-    "21 * * * *"
-   ]
-  },
-  "Autonomy::.github/workflows/token-watchdog.yml": {
-   "sha": "6d979c4dadf505150518f4c48e6313c67c6bb4b6",
-   "cron": "40 5 * * *",
-   "all": [
-    "40 5 * * *"
-   ]
-  },
-  "Autonomy::.github/workflows/value-scan.yml": {
-   "sha": "bb45db5391971906cc734f678ef43638416b2adc",
-   "cron": "17,47 * * * *",
-   "all": [
-    "17,47 * * * *"
-   ]
-  },
-  "Autonomy::.github/workflows/verifier.yml": {
-   "sha": "d395d2c74e03aa885be6857b84b851fb1cec9dbb",
-   "cron": "7,37 * * * *",
-   "all": [
-    "7,37 * * * *",
-    "23,53 * * * *"
-   ]
-  },
-  "Autonomy::.github/workflows/world-evolver.yml": {
-   "sha": "5ab23bfe555ee6cf12d7711d3ff4ccc680658a25",
-   "cron": "19 */2 * * *",
-   "all": [
-    "19 */2 * * *"
-   ]
-  },
   "saos-runtime::.github/workflows/agent-9-vault-sync.yml": {
    "sha": "b0b2907818f31d1933f3d2342c45539736fc9fb1",
    "cron": "31 3 * * *",
@@ -1939,6 +1939,41 @@
    "sha": null,
    "cron": null
   },
+  "sovereign-executor::.github/workflows/fleet-beat.yml": {
+   "sha": "afe7bf8792017980ef2b9102f9371c8d5d95e550",
+   "cron": "*/15 * * * *",
+   "all": [
+    "*/15 * * * *"
+   ]
+  },
+  "Pulse::.github/workflows/heartbeat.yml": {
+   "sha": "fdbab416b40c4a29b23c8726dfdb0a327973b2fa",
+   "cron": "*/30 * * * *",
+   "all": [
+    "*/30 * * * *"
+   ]
+  },
+  "Pulse::.github/workflows/identity-guard.yml": {
+   "sha": "cf3a4eb2a15ef2aa50618c1ffa11c98d72a018b5",
+   "cron": null,
+   "all": []
+  },
+  "Pulse::.github/workflows/pages-deploy.yml": {
+   "sha": "1f28f3528a183339e684d40a81f739ea31d2d162",
+   "cron": null,
+   "all": []
+  },
+  "Pulse::.github/workflows/sovereign-voice.yml": {
+   "sha": "4d49d89ef9a45db8b89a2cc90c8bdc4ea1d84ff2",
+   "cron": "*/30 * * * *",
+   "all": [
+    "*/30 * * * *"
+   ]
+  },
+  "Pulse::dynamic/pages/pages-build-deployment": {
+   "sha": null,
+   "cron": null
+  },
   "sovereign-runner-kit::.github/workflows/agent-shield.yml": {
    "sha": "7ed011eb71bca36d43672abe6fac97b475993b45",
    "cron": "26 6 * * *",
@@ -2026,51 +2061,54 @@
     "47 * * * *"
    ]
   },
-  "fleet-economy::.github/workflows/ci-probe.yml": {
-   "sha": "12974b32cb818c453f17a507886e37bead6029dd",
+  "sovereign-lighthouse::.github/workflows/estate-redboard.yml": {
+   "sha": "1a8ed182246840fdbe93c1c56f283a74f0fa0011",
+   "cron": "17,47 * * * *",
+   "all": [
+    "17,47 * * * *"
+   ]
+  },
+  "sovereign-lighthouse::.github/workflows/lighthouse-pulse.yml": {
+   "sha": "772e3f7a3ed84aa45cd73a41c5c39d9cbc1988c4",
+   "cron": "13,43 * * * *",
+   "all": [
+    "13,43 * * * *"
+   ]
+  },
+  "sovereign-lighthouse::dynamic/pages/pages-build-deployment": {
+   "sha": null,
+   "cron": null
+  },
+  "Defi::.github/workflows/canary.yml": {
+   "sha": "0a0ecd028816bfe721d107b34bd8c966812d8bab",
    "cron": null,
    "all": []
   },
-  "fleet-economy::.github/workflows/economy-beat.yml": {
-   "sha": "5ee417aad741be974c9a593c0c22d54531436335",
-   "cron": "13 */4 * * *",
-   "all": [
-    "13 */4 * * *",
-    "43 */4 * * *"
-   ]
-  },
-  "fleet-economy::.github/workflows/receipts-guard.yml": {
-   "sha": "328219635980072f1c510654c17715aaabc5c29f",
-   "cron": "*/15 * * * *",
-   "all": [
-    "*/15 * * * *"
-   ]
-  },
-  "Pulse::.github/workflows/heartbeat.yml": {
-   "sha": "fdbab416b40c4a29b23c8726dfdb0a327973b2fa",
-   "cron": "*/30 * * * *",
-   "all": [
-    "*/30 * * * *"
-   ]
-  },
-  "Pulse::.github/workflows/identity-guard.yml": {
-   "sha": "cf3a4eb2a15ef2aa50618c1ffa11c98d72a018b5",
+  "Defi::.github/workflows/gitleaks.yml": {
+   "sha": "834004d0b501f53045a1b79eb36c04bc4d482bac",
    "cron": null,
    "all": []
   },
-  "Pulse::.github/workflows/pages-deploy.yml": {
-   "sha": "1f28f3528a183339e684d40a81f739ea31d2d162",
+  "Defi::.github/workflows/workflow-yaml-guard.yml": {
+   "sha": "9a604536071afa9196eec586e870b7b3dc3313a1",
    "cron": null,
    "all": []
   },
-  "Pulse::.github/workflows/sovereign-voice.yml": {
-   "sha": "4d49d89ef9a45db8b89a2cc90c8bdc4ea1d84ff2",
-   "cron": "*/30 * * * *",
+  "sovereign-beacon::.github/workflows/beacon-pulse.yml": {
+   "sha": "b32c61ca51c77201e90a0f571be2c65fe74b842e",
+   "cron": "27 * * * *",
    "all": [
-    "*/30 * * * *"
+    "27 * * * *"
    ]
   },
-  "Pulse::dynamic/pages/pages-build-deployment": {
+  "sovereign-beacon::.github/workflows/keepalive.yml": {
+   "sha": "dfcfcbf32b62110612bd819b54405fc62ccf3355",
+   "cron": "*/20 * * * *",
+   "all": [
+    "*/20 * * * *"
+   ]
+  },
+  "sovereign-beacon::dynamic/pages/pages-build-deployment": {
    "sha": null,
    "cron": null
   },
@@ -2100,24 +2138,6 @@
    "sha": null,
    "cron": null
   },
-  "sovereign-beacon::.github/workflows/beacon-pulse.yml": {
-   "sha": "b32c61ca51c77201e90a0f571be2c65fe74b842e",
-   "cron": "27 * * * *",
-   "all": [
-    "27 * * * *"
-   ]
-  },
-  "sovereign-beacon::.github/workflows/keepalive.yml": {
-   "sha": "dfcfcbf32b62110612bd819b54405fc62ccf3355",
-   "cron": "*/20 * * * *",
-   "all": [
-    "*/20 * * * *"
-   ]
-  },
-  "sovereign-beacon::dynamic/pages/pages-build-deployment": {
-   "sha": null,
-   "cron": null
-  },
   "roshpina::.github/workflows/controls-audit.yml": {
    "sha": "45e836ff4fd961e8e2770aa5029f78ba8fbc6dc9",
    "cron": null,
@@ -2134,68 +2154,6 @@
    "all": []
   },
   "roshpina::.github/workflows/workflow-yaml-guard.yml": {
-   "sha": "9a604536071afa9196eec586e870b7b3dc3313a1",
-   "cron": null,
-   "all": []
-  },
-  "Defi::.github/workflows/canary.yml": {
-   "sha": "0a0ecd028816bfe721d107b34bd8c966812d8bab",
-   "cron": null,
-   "all": []
-  },
-  "Defi::.github/workflows/gitleaks.yml": {
-   "sha": "834004d0b501f53045a1b79eb36c04bc4d482bac",
-   "cron": null,
-   "all": []
-  },
-  "Defi::.github/workflows/workflow-yaml-guard.yml": {
-   "sha": "9a604536071afa9196eec586e870b7b3dc3313a1",
-   "cron": null,
-   "all": []
-  },
-  "sovereign-lighthouse::.github/workflows/estate-redboard.yml": {
-   "sha": "1a8ed182246840fdbe93c1c56f283a74f0fa0011",
-   "cron": "17,47 * * * *",
-   "all": [
-    "17,47 * * * *"
-   ]
-  },
-  "sovereign-lighthouse::.github/workflows/lighthouse-pulse.yml": {
-   "sha": "772e3f7a3ed84aa45cd73a41c5c39d9cbc1988c4",
-   "cron": "13,43 * * * *",
-   "all": [
-    "13,43 * * * *"
-   ]
-  },
-  "sovereign-lighthouse::dynamic/pages/pages-build-deployment": {
-   "sha": null,
-   "cron": null
-  },
-  "sovereign-executor::.github/workflows/fleet-beat.yml": {
-   "sha": "afe7bf8792017980ef2b9102f9371c8d5d95e550",
-   "cron": "*/15 * * * *",
-   "all": [
-    "*/15 * * * *"
-   ]
-  },
-  "saos-sovereign-platform::.github/workflows/foundry-tests.yml": {
-   "sha": "1422734c590575ffdc5b5fe4bbcfbb78b0ac5271",
-   "cron": null,
-   "all": []
-  },
-  "saos-sovereign-platform::.github/workflows/gitleaks.yml": {
-   "sha": "c2179806f90b8a4b17c4d49102ab79b09593920c",
-   "cron": null,
-   "all": []
-  },
-  "saos-sovereign-platform::.github/workflows/platform-selftest.yml": {
-   "sha": "2f260e34b5b3f99118b1a0063e90a667989e1316",
-   "cron": "41 13 * * *",
-   "all": [
-    "41 13 * * *"
-   ]
-  },
-  "saos-sovereign-platform::.github/workflows/workflow-yaml-guard.yml": {
    "sha": "9a604536071afa9196eec586e870b7b3dc3313a1",
    "cron": null,
    "all": []
@@ -2257,6 +2215,48 @@
    "all": [
     "*/30 * * * *"
    ]
+  },
+  "fleet-economy::.github/workflows/ci-probe.yml": {
+   "sha": "12974b32cb818c453f17a507886e37bead6029dd",
+   "cron": null,
+   "all": []
+  },
+  "fleet-economy::.github/workflows/economy-beat.yml": {
+   "sha": "5ee417aad741be974c9a593c0c22d54531436335",
+   "cron": "13 */4 * * *",
+   "all": [
+    "13 */4 * * *",
+    "43 */4 * * *"
+   ]
+  },
+  "fleet-economy::.github/workflows/receipts-guard.yml": {
+   "sha": "328219635980072f1c510654c17715aaabc5c29f",
+   "cron": "*/15 * * * *",
+   "all": [
+    "*/15 * * * *"
+   ]
+  },
+  "saos-sovereign-platform::.github/workflows/foundry-tests.yml": {
+   "sha": "1422734c590575ffdc5b5fe4bbcfbb78b0ac5271",
+   "cron": null,
+   "all": []
+  },
+  "saos-sovereign-platform::.github/workflows/gitleaks.yml": {
+   "sha": "c2179806f90b8a4b17c4d49102ab79b09593920c",
+   "cron": null,
+   "all": []
+  },
+  "saos-sovereign-platform::.github/workflows/platform-selftest.yml": {
+   "sha": "2f260e34b5b3f99118b1a0063e90a667989e1316",
+   "cron": "41 13 * * *",
+   "all": [
+    "41 13 * * *"
+   ]
+  },
+  "saos-sovereign-platform::.github/workflows/workflow-yaml-guard.yml": {
+   "sha": "9a604536071afa9196eec586e870b7b3dc3313a1",
+   "cron": null,
+   "all": []
   },
   "Saosmartwallet::.github/workflows/ci.yml": {
    "sha": "a2e2f1367f65250e844254771c88dd60d8a03813",
@@ -2546,6 +2546,5 @@
    "cron": null,
    "all": []
   }
- },
- "verified": true
+ }
 }
