@@ -43,7 +43,13 @@
   "carried": 4,
   "resolvedOrDropped": 1
  },
- "escalations": [],
+ "escalations": [
+  {
+   "id": "QUEUE-20261029-28",
+   "repo": "FleetHQ",
+   "kind": "dead-feed"
+  }
+ ],
  "apiCalls": 496,
  "apiQuota": {
   "limit": 5000,
@@ -2492,5 +2498,6 @@
    "cron": null,
    "all": []
   }
- }
+ },
+ "verified": true
 }
