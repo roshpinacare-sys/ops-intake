@@ -43,7 +43,13 @@
   "carried": 5,
   "resolvedOrDropped": 1
  },
- "escalations": [],
+ "escalations": [
+  {
+   "id": "QUEUE-20261108-58",
+   "repo": "roshpinacare-sys.github.io",
+   "kind": "front-door"
+  }
+ ],
  "apiCalls": 511,
  "apiQuota": {
   "limit": 5000,
@@ -2571,5 +2577,6 @@
    "cron": null,
    "all": []
   }
- }
+ },
+ "verified": true
 }
